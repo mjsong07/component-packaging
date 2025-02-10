@@ -1,4 +1,6 @@
 <template>
+
+  <h1>ref</h1>
    <ChildComponent ref="testRef" v-model="parentData" />  
    <input type="button" value="test" @click="test">
   </template>

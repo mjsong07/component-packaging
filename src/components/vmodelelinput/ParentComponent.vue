@@ -1,5 +1,8 @@
 <template>
-   <MidComponent v-model="parentData" />  
+
+  <h1>vmodelelinput</h1>
+   <MidComponent v-model="parentData" :parentData2="parentData2" />  
+   <input type="button" value="test" @click="test">
   </template>
   
   <script>
@@ -11,8 +14,15 @@
     },
     data() {
         return {
-            parentData:  'xxxx'
+            parentData:  'xxxx',
+            parentData2:  'xxxx'
         };
+        },   methods: {
+        test() { 
+            this.parentData2 = "dddd"
+            console.log("parentData",this.parentData)
+            console.log("parentData2",this.parentData2)
         }
+    }
   };
   </script> 

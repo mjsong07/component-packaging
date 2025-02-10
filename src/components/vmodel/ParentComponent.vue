@@ -1,4 +1,6 @@
 <template>
+
+  <h1>vmodel</h1>
    <MidComponent v-model="parentData" /> 
    <!-- <MidComponent :modelValue="parentData" @update:modelValue="parentData = $event" />  -->
   </template>
